@@ -1,0 +1,247 @@
+.navigation {
+  margin: 0px 20px 10px 20px; 
+  width: 100%; 
+  height: 100%;   
+}
+
+@media (min-width: 480px) {
+    .navigation {
+      flex-direction: row; 
+      align-items: flex-start; 
+    } 
+      .navigation { 
+      max-width: 100%; 
+      height: auto; 
+      margin: 0px 0px 10px 0px; 
+    }
+  }
+
+  @media (min-width: 760px) {
+    .navigation {
+      flex-direction: row; 
+      height: auto; 
+      max-width: 100%; 
+      margin: 0px 0px 10px 0px; 
+    }
+  }
+
+  @media (min-width: 980px) {
+    .navigation {
+      flex-direction: row;  
+      height: auto; 
+      max-width: 100%; 
+      margin: 0px 0px 10px 0px; 
+    }
+  }
+
+  .navbar {
+      max-width: 100%; 
+      height: auto; 
+  }
+
+  @media (min-width: 480px) {
+    .navbar {
+        width: 100%; 
+        height: auto; 
+        margin: 0px 0px 10px 0px;
+    }
+  }
+
+  @media (min-width: 760px) {
+    .navbar {
+      flex-direction: row; 
+      max-width: 100%; 
+      margin: 0px 0px 10px 0px; 
+    }
+  }
+
+  @media (min-width: 980px) {
+    .navbar {
+      flex-direction: row;  
+    }
+    .navbar {
+      width: 100%;  
+    }
+  }
+
+.container {
+  display: flex; 
+  flex-direction: row; 
+  align-items: stretch;  
+  margin: 0px 20px 20px 20px; 
+  max-width: 100%; 
+  height: 100%;  
+}
+
+#men {
+    display: flex; 
+    position: relative; 
+    height: 800px; 
+    width: 725px; 
+    margin: auto; 
+    object-fit: cover;
+    max-width: 100%; 
+}
+
+#women {
+    display: flex; 
+    position: relative; 
+    height: 800px; 
+    width: 725px; 
+    object-fit: cover; 
+    margin: auto; 
+    max-width: 100%; 
+}
+
+@media (min-width: 480px) {
+    .container {
+      flex-direction: column; 
+      align-items: center; 
+    } 
+      .container { 
+      max-width: 100%; 
+      height: 600px; 
+      margin: 0px 0px 10px 0px; 
+    }
+  }
+
+  @media screen and (max-width: 760px) { 
+    #men { display: none; }  
+    }
+
+  @media (min-width: 760px) {
+    .container {
+      flex-direction: row; 
+      height: 600px; 
+      max-width: 100%; 
+      margin: 0px 0px 10px 0px; 
+    }
+  }
+
+  @media (min-width: 980px) {
+    .container {
+      flex-direction: row;  
+    }
+    .container {
+      width: 950px;  
+    }
+  }
+
+
+
+
+/*CAROUSEL*/ 
+
+.carousel-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    max-width: 100%;
+    height: 700px; 
+    margin: 20px 10px 20px 10px; 
+    background-color: #c48e50; 
+}
+
+.carousel-item {
+     width: 500px; 
+     height: 500px; 
+}
+
+.d-block {
+    width: 500px; 
+    height: 500px; 
+}
+
+
+/*CATEGORY TILES */ 
+
+.bottom-row {
+     display: flex; 
+     flex-direction: row; 
+     justify-content: center; 
+     margin-top: 10px; 
+}
+
+#category-tiles {
+    display: flex; 
+    flex-direction: row; 
+    margin: 20px 10px 20px 10px; 
+}
+  
+.sneakers {
+  background-image: url("https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/5b9e088d_ff35.jpg");
+  height: 600px;
+  width: 600px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: bold; 
+  color: #000000; 
+  font-size: 20px; 
+}
+
+.bestsellers {
+    background-image: url("https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/68e584aa_90c7.jpg");
+    height: 600px;
+    width: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+    color: #000000; 
+    font-size: 20px; 
+  }
+
+  .accessories {
+    background-image: url("https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/c84343da_c544.jpg");
+    height: 600px;
+    width: 600px;  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+    color: #000000; 
+    font-size: 20px; 
+  }
+
+  @media (min-width: 480px) {
+    #category-tiles {
+        flex-direction: column;
+        width: 350px; 
+        margin: 0px 20px 0px 20px; 
+    }
+    .sneakers, .bestsellers, .accessories {
+      object-fit: cover; 
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #category-tiles {
+        flex-direction: column;
+        width: 450px; 
+        margin: 0px 20px 0px 20px; 
+    }
+    .sneakers, .bestsellers, .accessories {
+        text-align: center; 
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+        #category-tiles {
+           flex-direction: row;
+           width: 100%; 
+           margin: 0px 20px 0px 20px; 
+        }
+        .sneakers, .bestsellers, .accessories {
+            text-align: center; 
+          }
+        }
